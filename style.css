@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
     background-color: coral;
@@ -9,30 +12,38 @@ body{
 .container{
     background-color: aliceblue;
     padding: 2em;
-    width: 30%;
+    width: 90vw;
     margin: 0 auto;
     border-radius: 1em;
+    max-width: 37.5em;
+    margin-top: 20px;
+    box-shadow: 0 1em 2em rgba(112, 90, 23, 0.3);
 }
 
 .container-input{
     display: flex;
-}
-
-.years{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    justify-content: space-between;
+    gap: 1.8em;
 }
 
 input, button{
-    border: 1px solid coral;
     border-radius: 1em;
     padding: 1em;
     width: 100%;
     margin-bottom: 1em;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid coral;
+}
+
+input:focus{
+    border-bottom-color: coral;
 }
 
 button{
+    border: 1px solid coral;
     background-color: coral;
     color: #fff;
     cursor: pointer;

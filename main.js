@@ -35,6 +35,10 @@ button.addEventListener('click', ()=>{
             li.innerHTML = arrLeapYears[y] + ',&nbsp'
         }
         message.innerHTML = `There are ${arrLeapYears.length} years between ${startYear.value} & ${endYear.value}`
+
+        // A la place de li , on transforme juste le tableau dans une chaine de caractères
+        // arrLeapYears.toString().split(",").join(", ")
+        
     }
 
 })
